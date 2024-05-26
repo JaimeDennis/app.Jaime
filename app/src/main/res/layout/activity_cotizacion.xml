@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cotizacionActivity">
+
+    <!-- TextView para mostrar el texto introducido -->
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:text="Texto" />
+
+        <!-- TextView para el número de folio -->
+
+    <!-- EditText para la descripción de la cotización -->
+    <TextView
+        android:id="@+id/txtFolio"
+        android:layout_width="114dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:text="Folio: #001"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Descripción de la cotización"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtFolio"
+            android:padding="16dp"/>
+
+        <!-- EditText para el valor del automóvil -->
+        <EditText
+            android:id="@+id/editValorAuto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Valor del automóvil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editDescripcion"
+            android:inputType="numberDecimal"
+            android:padding="16dp"/>
+
+        <!-- EditText para el pago inicial -->
+        <EditText
+            android:id="@+id/editPagoInicial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Pago inicial"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editValorAuto"
+            android:inputType="numberDecimal"
+            android:padding="16dp"/>
+
+        <!-- RadioButton para seleccionar el plazo -->
+        <RadioGroup
+            android:id="@+id/radioGroupPlazo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/editPagoInicial"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radio12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 meses"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 meses"/>
+
+            <RadioButton
+                android:id="@+id/radio24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 meses"/>
+
+            <RadioButton
+                android:id="@+id/radio36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36 meses"/>
+        </RadioGroup>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupPlazo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular"/>
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"/>
+
+            <Button
+                android:id="@+id/btnCerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar" />
+        </LinearLayout>
+
+        <!-- TextView para el resultado de la cotización -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:text="Resultado de la cotización:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
