@@ -49,7 +49,7 @@ public class cotizacionmainActivity extends AppCompatActivity {
     }
 
     public void iniciarcomponentes(){
-        txtPregunta = (EditText) findViewById(R.id.txtPregunta);
+        txtPregunta = (EditText) findViewById(R.id.editTextNombreCliente);
         btnCotizacion = (Button) findViewById(R.id.btnIrCotizacion);
     }
 }
