@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jaime.App</string>
+    <string name="primer">Primer</string>
+    <string name="todo">TODO</string>
+    <string name="segundo">segundo</string>
+    <string name="tercer">tercer</string>
+    <string name="matricula">Matricula</string>
+    <string name="conversion_de_grados">Conversion de Grados</string>
+    <string name="celsius_a_farenheith">Celsius a Farenheith</string>
+    <string name="cantidad_de_grados">Cantidad de grados</string>
+    <string name="resultado">Resultado :</string>
+
+</resources>

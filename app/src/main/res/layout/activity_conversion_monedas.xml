@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Conversión en Monedas"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerMonedaOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitulo"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/monedas_origen" />
+
+    <EditText
+        android:id="@+id/editTextMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerMonedaOrigen"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Ingrese el monto"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMonto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/botonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/botonLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar" />
+
+        <Button
+            android:id="@+id/botonCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar" />
+    </LinearLayout>
+
+</RelativeLayout>

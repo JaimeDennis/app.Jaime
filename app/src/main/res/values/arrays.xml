@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="monedas_origen">
+        <item>USA</item>
+        <item>EURO</item>
+        <item>CAD</item>
+        <item>LIBRA</item>
+    </string-array>
+</resources>
