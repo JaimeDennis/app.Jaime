@@ -22,6 +22,7 @@ public class cotizacionmainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_cotizacionmain);
+
         iniciarcomponentes();
 
        btnCotizacion.setOnClickListener(new View.OnClickListener() {

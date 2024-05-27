@@ -53,6 +53,13 @@ public class menuActivity extends AppCompatActivity {
             }
         });
 
+        crvCotizacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(menuActivity.this,cotizacionmainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -65,7 +72,7 @@ public class menuActivity extends AppCompatActivity {
     public void iniciarcomponentes(){
         crvPrimer=(CardView) findViewById(R.id.Hola);
         crvIMC=(CardView) findViewById(R.id.imc);
-        crvConversion=(CardView) findViewById(R.id.Cotizacion);
+        crvCotizacion=(CardView) findViewById(R.id.Cotizacion);
         crvCambio=(CardView) findViewById(R.id.Moneda);
         crvConversion=(CardView) findViewById(R.id.Conversion);
     }
