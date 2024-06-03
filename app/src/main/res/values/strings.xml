@@ -11,4 +11,19 @@
     <string name="resultado">Resultado :</string>
     <string name="agencia">Toyota Mazatlan</string>
     <string name="domicilio">Av. Del Mar</string>
+
+    <string name="itemFrappses">Categorías Frappses</string>
+    <string name="itemAgradecimiento">Agradecimiento</string>
+    <string name="itemAmor">Amor</string>
+    <string name="itemNewYear">Año nuevo</string>
+    <string name="itemCanciones">Canciones</string>
+
+    <string name="msgFrappses">Desplegar</string>
+    <string name="msgAgradecimiento">Prueba dar las gracias</string>
+    <string name="msgAmor">Enamora con estas frases</string>
+    <string name="msgNewYear">Felicita el año nuevo</string>
+    <string name="msgCanciones">Escucha solo lo mejor</string>
+    <string name="msgSeleccionado">Se ha seleccionado</string>
+
+    <string name="spDescripcion">Seleccione una categoría</string>
 </resources>
