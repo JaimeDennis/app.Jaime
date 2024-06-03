@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtAltura"
+            android:inputType="numberDecimal"
             android:hint="Escribe tu altura en m">
         </EditText>
 
@@ -32,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtPeso"
+            android:inputType="numberDecimal"
             android:hint="Escribe tu peso en kg">
         </EditText>
 
@@ -62,6 +64,13 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btnLimpiar"
                 android:text="Limpiar">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCerrar"
+                android:text="Cerrar">
             </Button>
         </LinearLayout>
 

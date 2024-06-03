@@ -22,12 +22,15 @@ public class IMCActivity extends AppCompatActivity {
     private Button btnCalcular;
     private Button btnLimpiar;
 
+    private Button btnCerrar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_imcactivity);
 
+        btnCerrar = (Button) findViewById(R.id.btnCerrar);
         btnCalcular = (Button) findViewById(R.id.btnCalcular);
         btnLimpiar = (Button) findViewById(R.id.btnLimpiar);
         txtHeight = (EditText) findViewById(R.id.txtAltura);
@@ -67,6 +70,16 @@ public class IMCActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lblResultado.setText("Tu IMC es: ");
+                txtHeight.setText(" ");
+                txtWeight.setText(" ");
+
+            }
+        });
+
+        btnCerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

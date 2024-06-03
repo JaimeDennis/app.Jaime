@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/cantidad_de_grados"
             android:id="@+id/txtCantidad"
+            android:inputType="numberDecimal"
             android:paddingTop="20dp">
         </EditText>
 
