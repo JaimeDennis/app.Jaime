@@ -22,25 +22,24 @@ public class cotizacionmainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_cotizacionmain);
-
         iniciarcomponentes();
 
-       btnCotizacion.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Obtener el texto del EditText
-               String pregunta = txtPregunta.getText().toString();
+        btnCotizacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Obtener el texto del EditText
+                String pregunta = txtPregunta.getText().toString();
 
-               // Crear un Intent para iniciar la actividad de cotización
-               Intent intent = new Intent(cotizacionmainActivity.this, cotizacionActivity.class);
+                // Crear un Intent para iniciar la actividad de cotización
+                Intent intent = new Intent(cotizacionmainActivity.this, cotizacionActivity.class);
 
-               // Agregar el texto como un extra al Intent
-               intent.putExtra("PREGUNTA", pregunta);
+                // Agregar el texto como un extra al Intent
+                intent.putExtra("PREGUNTA", pregunta);
 
-               // Iniciar la actividad de cotización
-               startActivity(intent);
-           }
-       });
+                // Iniciar la actividad de cotización
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

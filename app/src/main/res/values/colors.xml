@@ -2,5 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mio">#FF000B</color>
+    <color name="RED">#FF000B</color>
+    <color name="Toyota">#DA3232</color>
+    <color name='Titulo'>#FF9800</color>
+    <color name='SubTitulo'>#938686</color>
 </resources>

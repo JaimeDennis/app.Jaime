@@ -9,5 +9,6 @@
     <string name="celsius_a_farenheith">Celsius a Farenheith</string>
     <string name="cantidad_de_grados">Cantidad de grados</string>
     <string name="resultado">Resultado :</string>
-
+    <string name="agencia">Toyota Mazatlan</string>
+    <string name="domicilio">Av. Del Mar</string>
 </resources>

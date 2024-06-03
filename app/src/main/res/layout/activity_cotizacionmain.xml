@@ -9,24 +9,18 @@
     tools:context=".cotizacionmainActivity">
 
     <LinearLayout
+       android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="116dp">
+        android:orientation="vertical">
+
         <!-- ImageView para la imagen -->
         <ImageView
             android:id="@+id/toyota"
             android:layout_width="71dp"
             android:layout_height="61dp"
             android:contentDescription="Toyota Logo"
-            android:src="@mipmap/cotizacion"
-            app:layout_constraintBottom_toTopOf="@+id/textViewToyota"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed" />
+            android:src="@mipmap/cotizacion" />
 
         <TextView
             android:id="@+id/textViewToyota"
@@ -34,10 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Toyota Mexico"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textViewColonia"
@@ -45,10 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Ave. del Mar 12000"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewToyota" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textViewPregunta"
@@ -56,32 +44,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="¿Cual es el nombre del cliente?"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewColonia" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/editTextNombreCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Ingrese el nombre del cliente"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPregunta" />
+            android:hint="Ingrese el nombre del cliente" />
 
         <Button
             android:id="@+id/btnIrCotizacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Ir a cotización"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNombreCliente" />
+            android:text="Ir a cotización" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
